@@ -47,12 +47,5 @@ public class JerseyController {
         return Response.ok("Аквариум запущен с " + manCount + " самцами и " + womanCount + " самками.").build();
     }
 
-    @POST
-    @Path("/born")
-    @Produces(MediaType.TEXT_PLAIN)
-    public Response bornFish() {
-        aquarium.bornFish();
-        return Response.ok("Новая рыбка родилась").build();
-    }
 
     }
