@@ -26,7 +26,7 @@ public class Fish implements Runnable{
     public void run() {
         try {
             Thread.sleep(lifetime*1000);
-            System.out.println(name+" dead");
+            System.out.println(name + " (" + gender + ") dead in " + lifetime +" y.o.");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

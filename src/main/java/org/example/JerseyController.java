@@ -22,13 +22,13 @@ public class JerseyController {
         int womanCount = random.nextInt(5) + 1;
 
         for (int i = 1; i <= manCount; i++) {
-            aquarium.addFish(new Fish(Gender.MAN, "fish men " + i));
-            System.out.println("added fish men "+i );
+            aquarium.addFish(new Fish(Gender.MAN, "fish men #" + i));
+            System.out.println("added fish men #"+i );
         }
 
         for (int i = 1; i <= womanCount; i++) {
-            aquarium.addFish(new Fish(Gender.WOMAN, "fish women " + i));
-            System.out.println("added fish women "+i );
+            aquarium.addFish(new Fish(Gender.WOMAN, "fish women #" + i));
+            System.out.println("added fish women #"+i );
         }
 
         aquarium.startLife();

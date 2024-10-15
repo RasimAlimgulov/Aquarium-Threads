@@ -32,8 +32,9 @@ public class Aquarium {
             }
 
         if (man!=null && woman!=null){
-               Gender gender=random.nextBoolean()?Gender.MAN:Gender.WOMAN;
-               Fish fish=new Fish(gender, "child "+count);
+            System.out.println("Meeting " + man.getName() + " (men) and " + woman.getName() + " (women)");
+            Gender gender=random.nextBoolean()?Gender.MAN:Gender.WOMAN;
+               Fish fish=new Fish(gender, "child #"+count);
                addFish(fish);
                service.submit(fish);
             System.out.println("Born "+fish.getName()+" " + fish.getGender());
